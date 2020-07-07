@@ -4,7 +4,7 @@ def Method1(n):
 	for c in m:
 		if not c.isalnum():
 			m = m.replace(c,'')
-	print(m)
+	return m
 
 
 def Method2(n):
@@ -13,8 +13,8 @@ def Method2(n):
 	for c in m:
 		if c not in PERMITTED_CHARS:
 			m = m.replace(c,'')
-	print(m)
+	return m
 
 
-Method1(n)
-Method2(n)
+print(Method1(n))
+print(Method2(n))
